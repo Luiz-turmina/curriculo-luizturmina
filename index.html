@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Luiz Gustavo Turmina — Piloto #27 · Currículo Esportivo</title>
+<meta name="description" content="Currículo esportivo do piloto Luiz Gustavo Turmina, #27: kart, Sprint Race Brasil, Brasileiro de Marcas e 24 Horas do Algarve." />
+<meta name="theme-color" content="#0A0B0D" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<nav class="nav" id="nav" aria-label="Capítulos"></nav>
+<button class="pdf-btn" id="pdf" type="button" title="Abre a janela de impressão: escolha “Salvar como PDF”">Salvar em PDF</button>
+
+<main>
+
+  <!-- CAPA -->
+  <header class="hero pg" id="capa" data-label="Capa">
+    <div class="hero-bg"><img id="hero-img" alt="Luiz Gustavo Turmina em pista, carro #27" /></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="speed" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+    <div class="hero-top wrap">
+      <span class="mono">Currículo esportivo</span>
+    </div>
+
+    <div class="hero-main wrap">
+      <div class="plate" id="plate" aria-hidden="true"><span></span></div>
+      <h1 class="name" id="h-name"></h1>
+      <p class="role" id="role"></p>
+    </div>
+
+    <div class="cue mono" aria-hidden="true"><i></i>Role</div>
+  </header>
+
+  <div class="mq" aria-hidden="true"><div class="mq-track" id="mq"></div></div>
+
+  <!-- PERFIL -->
+  <section class="perfil pg" id="perfil" data-label="Perfil">
+    <div class="wrap perfil-grid">
+      <figure class="p-photo">
+        <div class="ph"><img id="p-retrato" alt="Retrato de Luiz Gustavo Turmina" /></div>
+        <div class="ph ph-2"><img id="p-capacete" alt="Luiz Gustavo Turmina ajustando o capacete" /></div>
+      </figure>
+      <div class="p-txt">
+        <p class="kicker">Perfil</p>
+        <p class="lede" id="p-lede"></p>
+        <ul class="kpis" id="kpis"></ul>
+        <dl class="dados" id="dados"></dl>
+        <ul class="contacts" id="contacts"></ul>
+      </div>
+    </div>
+  </section>
+
+  <div id="capitulos"></div>
+
+  <!-- RESULTADOS (papel) -->
+  <section class="paper pg" id="resultados" data-label="Resultados">
+    <div class="wrap">
+      <header class="sh"><p class="kicker">Sprint Race Brasil · 2017 e 2018</p><h2 class="h2">Principais resultados <em>em corridas</em></h2></header>
+      <div class="board" id="board" role="table" aria-label="Principais resultados"></div>
+      <div class="circuits">
+        <p class="kicker">Circuitos</p>
+        <p class="circ-line" id="circuits"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="gal pg" id="galeria" data-label="Galeria">
+    <div class="wrap">
+      <header class="sh"><p class="kicker">Galeria</p><h2 class="h2">Na pista, <em>nos boxes e no pódio</em></h2></header>
+      <div class="mosaic" id="mosaic"></div>
+    </div>
+  </section>
+
+  <footer class="end pg" id="fim">
+    <div class="end-27" aria-hidden="true" id="end27"></div>
+    <div class="wrap end-in">
+      <p class="mono" id="end-meta"></p>
+      <p class="end-name" id="end-name"></p>
+      <ul class="contacts end-contacts" id="end-contacts"></ul>
+    </div>
+  </footer>
+</main>
+
+<div class="lb" id="lb" hidden>
+  <button class="lb-x" id="lb-x" type="button" aria-label="Fechar">×</button>
+  <button class="lb-p" id="lb-p" type="button" aria-label="Anterior">‹</button>
+  <figure><img id="lb-img" alt="" /><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-n" id="lb-n" type="button" aria-label="Próxima">›</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
